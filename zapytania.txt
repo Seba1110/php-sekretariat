@@ -1,0 +1,4 @@
+SELECT imie, nazwisko, adres, miasto, czyRODO, czyBadania FROM pracownicy WHERE id=2;
+SELECT SUM(*) FROM PRACOWNICY;
+SELECT id, imie, nazwisko FROM pracownicy WHERE id = 2;
+SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM pracownicy JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id WHERE pracownicy.id = 2;
